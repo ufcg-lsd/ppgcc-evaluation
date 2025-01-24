@@ -48,8 +48,8 @@ dados <- dados %>% rowwise() %>%
   unique()
 
 # Remover arquivos antigos
-arquivos <- drive_ls(path = as_id(pasta_id))
-drive_rm(arquivos)
+# arquivos <- drive_ls(path = as_id(pasta_id))
+# drive_rm(arquivos)
 
 # Selcionar orientadores principais
 orientadores <- sort(unique(dados$orientador_principal))
